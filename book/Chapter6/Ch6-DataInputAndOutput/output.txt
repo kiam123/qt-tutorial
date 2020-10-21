@@ -1,0 +1,4 @@
+name	score
+justin	95
+momor	93
+minnie	93
