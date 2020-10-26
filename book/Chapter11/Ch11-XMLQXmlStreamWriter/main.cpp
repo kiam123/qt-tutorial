@@ -7,7 +7,7 @@ int main(int argc, char *argv[])
 {
     QCoreApplication a(argc, argv);
 
-    QFile file("D:/QtProject/QTProject/qt-tutorial/book/Chapter11/Ch11-XMLQXmlStreamWriter/bookindex.xml");
+    QFile file("D:/QtProjects/QtProject/qt-tutorial/book/Chapter11/Ch11-XMLQXmlStreamWriter/bookindex.xml");
     if (!file.open(QFile::WriteOnly | QFile::Text)) {
         qDebug() << "Error: Cannot write file: "
                  << qPrintable(file.errorString());
