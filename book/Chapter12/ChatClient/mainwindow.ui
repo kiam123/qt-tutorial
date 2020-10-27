@@ -78,6 +78,9 @@
     <property name="horizontalScrollBarPolicy">
      <enum>Qt::ScrollBarAsNeeded</enum>
     </property>
+    <property name="plainText">
+     <string>kiam</string>
+    </property>
    </widget>
    <widget class="QLineEdit" name="serverLineEdit">
     <property name="geometry">
@@ -87,6 +90,9 @@
       <width>161</width>
       <height>21</height>
      </rect>
+    </property>
+    <property name="text">
+     <string>localhost</string>
     </property>
    </widget>
   </widget>

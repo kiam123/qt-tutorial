@@ -18,12 +18,14 @@ public:
     ChatView(QWidget *parent = nullptr, ChatData *chatData = nullptr);
     ~ChatView();
 
+private slots:
+    void on_pushButton_clicked();
+    void readyRead();
+    void connected();
+
 private:
     Ui::ChatView *ui;
     QTcpSocket *socket;
-
-    void readyRead();
-    void connected();
 };
 
 #endif // CHATVIEW_H

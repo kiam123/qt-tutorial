@@ -20,9 +20,10 @@ MainWindow::~MainWindow()
 void MainWindow::on_pushButton_clicked()
 {
 //    socket->connectToHost(ui->serverLineEdit->text(), 9999);
-    hide();
     ChatData *chatData = new ChatData();
     chatData->text = ui->serverLineEdit->text();
+    hide();
+
 
     qDebug() << "ui:" << ui->serverLineEdit->text();
     chatView = new ChatView(this, chatData);

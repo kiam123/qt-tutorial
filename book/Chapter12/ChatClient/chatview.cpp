@@ -32,7 +32,7 @@ void ChatView::readyRead()
         {
             QString user = messageRegex.cap(1);
             QString message = messageRegex.cap(2);
-            ui->roomTextEdtit->append("<b></br>");
+            ui->roomTextEdtit->append("<b>"+user+"</br>: "+message);
         }
     }
 }
@@ -41,4 +41,9 @@ void ChatView::connected()
 {
     socket->write(QString("/me"+ui->userLineEdit->text()
                                +"\n").toUtf8());
+}
+
+void ChatView::on_pushButton_clicked()
+{
+//    socket->
 }
